@@ -1,0 +1,39 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    /* background-color: black; */
+    width: 1064px;
+    /* height: 38px; */
+    /* top: 61px; */
+    left: 188px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.navBar h1 {
+    font-size: 30px;
+/* font-size: 20px; */
+/* height: 38px; */
+}
+
+header {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    font-size: 25px;
+    padding: 10px; 
+
+    
+}
