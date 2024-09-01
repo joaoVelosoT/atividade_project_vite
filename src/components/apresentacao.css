@@ -1,15 +1,17 @@
 .apresentacao {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .apresentacaoText h2 {
+    margin: 10px;
     font-size: 72px;
     color: white;
 }
 
 .apresentacaoText p {
+    margin: 10px;
     width: 534px;
     font-size: 30px;
     color: white;
@@ -29,8 +31,13 @@
     font-size: 30px;
     font-weight: 600;
     line-height: 37.8px;
+    margin: 10px;
+    border: none;
+}
 
-
+.apresentacao button:hover {
+    cursor: pointer;
+    opacity: 0.9;
 }
 
 .apresentacaoImage img {

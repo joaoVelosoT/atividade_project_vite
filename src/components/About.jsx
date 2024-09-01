@@ -4,7 +4,7 @@ import iconCpu from "../assets/image/iconCpu.png"
 import iconMouse from "../assets/image/iconMouse.png"
 const About = () => {
     return(
-        <div className="containerAbout">
+        <div className="containerAbout" id="containerAbout">
             <div className="containerImageAbout">
                 <h3>ABOUT</h3>
                 <img src={imagem} alt="" />

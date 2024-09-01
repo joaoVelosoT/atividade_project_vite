@@ -2,7 +2,7 @@ import("./projects.css");
 import imagem from "../assets/image/image 1.png";
 const Projects = () => {
   return (
-    <div className="containerTecnologias">
+    <div className="containerTecnologias" id="containerTecnologias">
       <h3>Projects</h3>
       <ul>
         <li className="projectItem">

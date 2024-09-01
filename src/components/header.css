@@ -32,8 +32,15 @@ ul {
 }
 
 li {
+    list-style-type: none;
+
     font-size: 25px;
     padding: 10px; 
 
     
+}
+
+li a {
+    text-decoration: none;
+    color: white;
 }

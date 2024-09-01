@@ -1,5 +1,7 @@
 .containerAbout {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 1211px;
     height: 639px;
     top: 748px;
@@ -36,6 +38,7 @@ opacity: 0px;
     line-height: 44.1px;
     letter-spacing: 0.05em;
     text-align: left;
+    margin-top: 20px;
 }
 
 .containerItem ul {
