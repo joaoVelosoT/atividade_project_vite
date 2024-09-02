@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./formulario.css";
+// import ValidationData from "../../validation/ValidationData";
 const Form = (props) => {
   // Estado inicial do formulario
   const initilForm = {
@@ -16,6 +17,9 @@ const Form = (props) => {
     // Extrair o valor e nome do campo de entrada
     const { value, name, email} = target;
 
+
+    
+
     // Atualizar o estado do formulario com os novos valores
     setFormState({ ...formState, [name]: value , [email] : value}); // ... => espalhando informações
   };
@@ -23,6 +27,11 @@ const Form = (props) => {
   // Função para lidar com a submissão do formulario
   const handleSubmit = (event) => {
     event.preventDefault();
+    
+    
+    if (!nome || !email){
+      return alert("Os dados estão vazios")
+    }
     console.log(formState.nome);
     console.log(formState.email);
 
@@ -43,6 +52,7 @@ const Form = (props) => {
               id="nome"
               name="nome"
               required
+              minLength={10}
               value={formState.nome}
               onChange={handleInput}
             />
