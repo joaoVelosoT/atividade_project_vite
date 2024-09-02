@@ -2,15 +2,20 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
-
-import Header from "./components/Header"
-import Main from "./components/Main"
+import Footer from "./components/Footer/Footer"
+import Header from "./components/Header/Header"
+import Main from "./components/Main/Main"
 
 function App() {
   return (
     <>
-      <Header/ >
+      <Header/>
       <Main/>
+      <Footer
+      contentEmail = "vitorvteixeira2023@gmail.com"
+      contentLinkedin = "linkedin.com/joaovitor1804"
+      contentGithub = "github.com/joaoVelosoT"
+      />
     </>
    
   )

@@ -1,13 +1,15 @@
 import ("./about.css");
-import imagem from "../assets/image/imageAbout.png"
-import iconCpu from "../assets/image/iconCpu.png"
-import iconMouse from "../assets/image/iconMouse.png"
-const About = () => {
+import iconCpu from "/src/assets/image/iconCpu.png"
+import iconMouse from "/src/assets/image/iconCpu.png"
+
+const About = ({title, image}) => {
+
+    
     return(
         <div className="containerAbout" id="containerAbout">
             <div className="containerImageAbout">
                 <h3>ABOUT</h3>
-                <img src={imagem} alt="" />
+                <img src={image} alt="" />
             </div>
             <div className="containerItem">
                 <ul>

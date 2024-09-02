@@ -5,7 +5,6 @@ const Form = (props) => {
   const initilForm = {
     nome: "",
     email : "",
-    senha : "",
   };
 
   // Estado do formulario
@@ -15,10 +14,10 @@ const Form = (props) => {
     //  Obter o valor e o nome do campo de entrada
     const target = event.currentTarget;
     // Extrair o valor e nome do campo de entrada
-    const { value, name, email, senha } = target;
+    const { value, name, email} = target;
 
     // Atualizar o estado do formulario com os novos valores
-    setFormState({ ...formState, [name]: value , [email] : value, [senha] : value}); // ... => espalhando informações
+    setFormState({ ...formState, [name]: value , [email] : value}); // ... => espalhando informações
   };
 
   // Função para lidar com a submissão do formulario
@@ -26,7 +25,7 @@ const Form = (props) => {
     event.preventDefault();
     console.log(formState.nome);
     console.log(formState.email);
-    console.log(formState.senha);
+
     setFormState({...initilForm})
   };
 
@@ -43,6 +42,7 @@ const Form = (props) => {
               type="text"
               id="nome"
               name="nome"
+              required
               value={formState.nome}
               onChange={handleInput}
             />
@@ -50,25 +50,16 @@ const Form = (props) => {
             <div className="container-input">
             <label htmlFor="email">Email</label>
             <input
-              type="text"
+              type="email"
               id="email"
               name="email"
+              required
+              minLength={10}
               value={formState.email}
               onChange={handleInput}
             />
             </div>
-            <div className="container-input">
-            <label htmlFor="senha">Senha</label>
-            <input
-              type="text"
-              id="senha"
-              name="senha"
-              value={formState.senha}
-              onChange={handleInput}
-            />
-                
-            </div>
-            
+          
           </div>
           <div className="form-control">
             <button type="submit">Enviar</button>
